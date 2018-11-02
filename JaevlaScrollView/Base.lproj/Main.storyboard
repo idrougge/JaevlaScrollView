@@ -31,6 +31,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cAX-mk-9FF">
+                                                <rect key="frame" x="8" y="28.5" width="359" height="356.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="3c0-MZ-ANy">
                                                 <rect key="frame" x="115.5" y="524" width="144" height="30"/>
                                                 <subviews>
@@ -47,10 +54,14 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.1624891493" green="0.6835237676" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="cAX-mk-9FF" firstAttribute="top" secondItem="tkq-ra-Aal" secondAttribute="bottom" constant="8" id="D5U-Dw-4Nn"/>
                                             <constraint firstItem="tkq-ra-Aal" firstAttribute="top" secondItem="pqu-8N-U4x" secondAttribute="top" id="IaS-oT-k1R"/>
+                                            <constraint firstItem="3c0-MZ-ANy" firstAttribute="top" secondItem="cAX-mk-9FF" secondAttribute="bottom" constant="139" id="Jy3-RB-PHA"/>
                                             <constraint firstAttribute="bottom" secondItem="3c0-MZ-ANy" secondAttribute="bottom" id="NKk-hu-An3"/>
                                             <constraint firstItem="tkq-ra-Aal" firstAttribute="leading" secondItem="pqu-8N-U4x" secondAttribute="leading" id="S6a-Vr-O90"/>
                                             <constraint firstAttribute="trailing" secondItem="tkq-ra-Aal" secondAttribute="trailing" id="Wcc-sR-3Qv"/>
+                                            <constraint firstItem="cAX-mk-9FF" firstAttribute="leading" secondItem="pqu-8N-U4x" secondAttribute="leading" constant="8" id="XrC-oR-8nG"/>
+                                            <constraint firstAttribute="trailing" secondItem="cAX-mk-9FF" secondAttribute="trailing" constant="8" id="oqg-V8-nds"/>
                                             <constraint firstItem="3c0-MZ-ANy" firstAttribute="centerX" secondItem="pqu-8N-U4x" secondAttribute="centerX" id="yCk-DI-X0L"/>
                                         </constraints>
                                     </view>
