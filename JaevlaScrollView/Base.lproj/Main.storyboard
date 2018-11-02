@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="1087"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqu-8N-U4x" userLabel="Inner View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1040"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="410"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rubrik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkq-ra-Aal">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="38.5"/>
@@ -32,27 +32,33 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1v-Ur-sJ2" userLabel="Long text">
-                                                <rect key="frame" x="8" y="46.5" width="359" height="945.5"/>
+                                                <rect key="frame" x="8" y="46.5" width="359" height="315.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Ett pangram, från grekiskans pan gramma vilket ungefär betyder "varje bokstav", är en text som innehåller, eller bör innehålla, varje bokstav i alfabetet. Förutom för skojs skull används pangram ofta inom typografin för att visa exempel på utseende hos typsnitt. Ett tidigare användningsområde var vid test av skrivmaskiner, skrivare, telex och liknande utrustning.  Exempel: "Flygande bäckasiner söka hwila på mjuka tuvor." "Yxmördaren Julia Blomqvist på fäktning i Schweiz."  Ett äkta pangram innehåller alla alfabetets bokstäver, och ett perfekt pangram innehåller varje bokstav precis en gång. Perfekta pangram på svenska innehåller mer eller mindre påhittade ord och krystade meningar.  Ett självnumrerande pangram är ett pangram som beskriver antalet bokstäver det innehåller:
-
-Detta pangram innehåller sex a:n, ett b, två c:n, två d:n, tjugotre e:n, tre f, fyra g:n, tre h:n, tre i:n, sju j:n, ett k, tre l, tre m, tjugo n, sex o:n, två p:n, ett q, tretton r, sju s, trettioåtta t:n, sju u:n, fem v:n, ett w, tre x, två y:n, ett z, sju å:n, ett ä och ett ö.</mutableString>
+                                                <mutableString key="text">Ett pangram, från grekiskans pan gramma vilket ungefär betyder "varje bokstav", är en text som innehåller, eller bör innehålla, varje bokstav i alfabetet. Förutom för skojs skull används pangram ofta inom typografin för att visa exempel på utseende hos typsnitt. Ett tidigare användningsområde var vid test av skrivmaskiner, skrivare, telex och liknande utrustning. </mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="3c0-MZ-ANy">
-                                                <rect key="frame" x="115.5" y="1057" width="144" height="30"/>
+                                                <rect key="frame" x="109.5" y="382" width="156" height="28"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb5-UQ-Elf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="56" height="28"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                                        <state key="normal" title="Vänster"/>
+                                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                        <state key="normal" title="More"/>
+                                                        <connections>
+                                                            <action selector="didPressMore" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7h-jK-mOO"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJ3-gu-0vP">
-                                                        <rect key="frame" x="101" y="0.0" width="43" height="30"/>
+                                                        <rect key="frame" x="104" y="0.0" width="52" height="28"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                                        <state key="normal" title="Höger"/>
+                                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                        <state key="normal" title="Less"/>
+                                                        <connections>
+                                                            <action selector="didPressLess" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5S-Uf-kEd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -68,6 +74,7 @@ Detta pangram innehåller sex a:n, ett b, två c:n, två d:n, tjugotre e:n, tre 
                                             <constraint firstAttribute="bottom" secondItem="B1v-Ur-sJ2" secondAttribute="bottom" constant="48" id="YXE-CC-UL7"/>
                                             <constraint firstAttribute="trailing" secondItem="B1v-Ur-sJ2" secondAttribute="trailing" constant="8" id="jmj-Yn-Ykf"/>
                                             <constraint firstItem="B1v-Ur-sJ2" firstAttribute="leading" secondItem="pqu-8N-U4x" secondAttribute="leading" constant="8" id="mcp-e0-Tpf"/>
+                                            <constraint firstAttribute="bottom" secondItem="3c0-MZ-ANy" secondAttribute="bottom" id="rIO-8a-ngn"/>
                                             <constraint firstItem="3c0-MZ-ANy" firstAttribute="centerX" secondItem="pqu-8N-U4x" secondAttribute="centerX" id="yCk-DI-X0L"/>
                                         </constraints>
                                         <variation key="default">
@@ -106,6 +113,9 @@ Detta pangram innehåller sex a:n, ett b, två c:n, två d:n, tjugotre e:n, tre 
                     </view>
                     <navigationItem key="navigationItem" id="8n2-A9-CUP"/>
                     <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="longTextLabel" destination="B1v-Ur-sJ2" id="Lvd-pM-d0M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
