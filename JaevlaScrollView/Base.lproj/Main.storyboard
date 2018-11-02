@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="1087"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqu-8N-U4x" userLabel="Inner View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1030"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1040"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rubrik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkq-ra-Aal">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="38.5"/>
@@ -42,7 +42,7 @@ Detta pangram innehåller sex a:n, ett b, två c:n, två d:n, tjugotre e:n, tre 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="3c0-MZ-ANy">
-                                                <rect key="frame" x="115.5" y="1000" width="144" height="30"/>
+                                                <rect key="frame" x="115.5" y="1057" width="144" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb5-UQ-Elf">
                                                         <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
@@ -59,16 +59,22 @@ Detta pangram innehåller sex a:n, ett b, två c:n, två d:n, tjugotre e:n, tre 
                                         </subviews>
                                         <color key="backgroundColor" red="0.1624891493" green="0.6835237676" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="3c0-MZ-ANy" firstAttribute="top" secondItem="B1v-Ur-sJ2" secondAttribute="bottom" constant="8" id="4TO-4D-O83"/>
+                                            <constraint firstItem="3c0-MZ-ANy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="B1v-Ur-sJ2" secondAttribute="bottom" constant="8" id="4TO-4D-O83"/>
                                             <constraint firstItem="tkq-ra-Aal" firstAttribute="top" secondItem="pqu-8N-U4x" secondAttribute="top" id="IaS-oT-k1R"/>
                                             <constraint firstAttribute="bottom" secondItem="3c0-MZ-ANy" secondAttribute="bottom" id="NKk-hu-An3"/>
                                             <constraint firstItem="B1v-Ur-sJ2" firstAttribute="top" secondItem="tkq-ra-Aal" secondAttribute="bottom" constant="8" id="OAQ-By-uc5"/>
                                             <constraint firstItem="tkq-ra-Aal" firstAttribute="leading" secondItem="pqu-8N-U4x" secondAttribute="leading" id="S6a-Vr-O90"/>
                                             <constraint firstAttribute="trailing" secondItem="tkq-ra-Aal" secondAttribute="trailing" id="Wcc-sR-3Qv"/>
+                                            <constraint firstAttribute="bottom" secondItem="B1v-Ur-sJ2" secondAttribute="bottom" constant="48" id="YXE-CC-UL7"/>
                                             <constraint firstAttribute="trailing" secondItem="B1v-Ur-sJ2" secondAttribute="trailing" constant="8" id="jmj-Yn-Ykf"/>
                                             <constraint firstItem="B1v-Ur-sJ2" firstAttribute="leading" secondItem="pqu-8N-U4x" secondAttribute="leading" constant="8" id="mcp-e0-Tpf"/>
                                             <constraint firstItem="3c0-MZ-ANy" firstAttribute="centerX" secondItem="pqu-8N-U4x" secondAttribute="centerX" id="yCk-DI-X0L"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="NKk-hu-An3"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
@@ -87,6 +93,7 @@ Detta pangram innehåller sex a:n, ett b, två c:n, två d:n, tjugotre e:n, tre 
                             <constraint firstItem="Dcd-sY-u9o" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fC0-Sv-3BE"/>
                             <constraint firstItem="pqu-8N-U4x" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="fGI-w3-spS"/>
                             <constraint firstItem="Dcd-sY-u9o" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fVc-YQ-Liw"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="3c0-MZ-ANy" secondAttribute="bottom" priority="250" id="iQ6-3L-m5K"/>
                             <constraint firstItem="Dcd-sY-u9o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" identifier="scroll top = safe top" id="k8S-BT-OEi"/>
                             <constraint firstItem="Dcd-sY-u9o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wKv-l2-886"/>
                         </constraints>
@@ -130,6 +137,7 @@ Detta pangram innehåller sex a:n, ett b, två c:n, två d:n, tjugotre e:n, tre 
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="faf-G2-2L6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yFA-SF-D6a">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
