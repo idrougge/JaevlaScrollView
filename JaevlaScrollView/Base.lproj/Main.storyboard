@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="1087"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqu-8N-U4x" userLabel="Inner View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="410"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1087"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rubrik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkq-ra-Aal">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="38.5"/>
@@ -34,13 +34,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1v-Ur-sJ2" userLabel="Long text">
                                                 <rect key="frame" x="8" y="46.5" width="359" height="315.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Ett pangram, från grekiskans pan gramma vilket ungefär betyder "varje bokstav", är en text som innehåller, eller bör innehålla, varje bokstav i alfabetet. Förutom för skojs skull används pangram ofta inom typografin för att visa exempel på utseende hos typsnitt. Ett tidigare användningsområde var vid test av skrivmaskiner, skrivare, telex och liknande utrustning. </mutableString>
+                                                <string key="text">Ett pangram, från grekiskans pan gramma vilket ungefär betyder "varje bokstav", är en text som innehåller, eller bör innehålla, varje bokstav i alfabetet. Förutom för skojs skull används pangram ofta inom typografin för att visa exempel på utseende hos typsnitt. Ett tidigare användningsområde var vid test av skrivmaskiner, skrivare, telex och liknande utrustning. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="3c0-MZ-ANy">
-                                                <rect key="frame" x="109.5" y="382" width="156" height="28"/>
+                                                <rect key="frame" x="109.5" y="1059" width="156" height="28"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb5-UQ-Elf">
                                                         <rect key="frame" x="0.0" y="0.0" width="56" height="28"/>
@@ -71,7 +71,6 @@
                                             <constraint firstItem="B1v-Ur-sJ2" firstAttribute="top" secondItem="tkq-ra-Aal" secondAttribute="bottom" constant="8" id="OAQ-By-uc5"/>
                                             <constraint firstItem="tkq-ra-Aal" firstAttribute="leading" secondItem="pqu-8N-U4x" secondAttribute="leading" id="S6a-Vr-O90"/>
                                             <constraint firstAttribute="trailing" secondItem="tkq-ra-Aal" secondAttribute="trailing" id="Wcc-sR-3Qv"/>
-                                            <constraint firstAttribute="bottom" secondItem="B1v-Ur-sJ2" secondAttribute="bottom" constant="48" id="YXE-CC-UL7"/>
                                             <constraint firstAttribute="trailing" secondItem="B1v-Ur-sJ2" secondAttribute="trailing" constant="8" id="jmj-Yn-Ykf"/>
                                             <constraint firstItem="B1v-Ur-sJ2" firstAttribute="leading" secondItem="pqu-8N-U4x" secondAttribute="leading" constant="8" id="mcp-e0-Tpf"/>
                                             <constraint firstAttribute="bottom" secondItem="3c0-MZ-ANy" secondAttribute="bottom" id="rIO-8a-ngn"/>
